@@ -1,8 +1,9 @@
-# get config in file and set entries as environment variables
+# get config in file and set entries as environment variables.
+# This file has to be sourced in order for variables to be available to caller
 
 FILENAME_CONF=ewc.conf  # name of the config file. Will locate this filename in same directory as this script
 
-path_scripts=$(dirname "$0")
+path_scripts=$(dirname "$_")
 file_conf=$path_scripts/$FILENAME_CONF
 
 if [ ! -f "$file_conf" ]; then

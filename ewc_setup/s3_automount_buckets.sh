@@ -2,7 +2,7 @@
 # Pass bucket names as arguments to script
 
 path_scripts=$(dirname "$0")
-$path_scripts/get_config.sh
+source $path_scripts/get_config.sh
 
 
 for bucket in ${@}
@@ -12,3 +12,4 @@ do
 done
 
 sudo mount -a
+
