@@ -1,6 +1,9 @@
 # Create S3 buckets. Pass bucket names as arguments to script.
 
+path_scripts=$(dirname "$0")
+
 for bucket in ${@}
 do
-    s3cmd mb $bucket
+    $path_scripts/s3_generate_bucket.sh $bucket
 done
+
