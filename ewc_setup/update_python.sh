@@ -2,7 +2,7 @@
 # to this new version and upgrades pip (needed for installing from pyproject.toml)
 
 
-PYTHON_VERSION=python3.8
+PYTHON_VERSION=python3.10
 
 echo 
 echo "Installing $PYTHON_VERSION and updating pip"
