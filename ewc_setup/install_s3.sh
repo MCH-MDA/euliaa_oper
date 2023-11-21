@@ -25,7 +25,10 @@ echo "------------------------------------"
 
 cat >/$HOME/.s3cfg <<EOT
 host_base = $S3_HOST_BASE
+host_bucket = 
 access_key = $S3_ACCESS_KEY
 secret_key = $S3_SECRET_KEY
+use_https = True
+check_ssl_certificate = False
 EOT
 
