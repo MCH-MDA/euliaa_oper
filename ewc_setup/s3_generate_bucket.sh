@@ -1,7 +1,9 @@
 # generate a new bucket and attach policy. Takes bucket name as first argument (omit the s3:// part)
 
 BUCKET_NAME=$1  # e.g. eprofile-dl-raw
-POLICY_FILE=s3_policy_ukmo.txt
+path_scripts=$(dirname "$0")
+POLICY_FILE="$path_scripts/s3_policy_ukmo.txt"
+
 
 if [ $# -ne 1 ]
 then
