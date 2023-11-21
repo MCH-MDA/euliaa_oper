@@ -2,7 +2,7 @@
 
 repo_name=dl_toolbox_nrt
 repo_url=https://github.com/rruefenacht/dl_toolbox_nrt
-base_dir="$HOME"  # directory where to install code in as a subdirectory mwr_l12l2
+base_dir="$HOME"  # directory where to install code in as a subdirectory dl_toolbox_nrt
 
 
 

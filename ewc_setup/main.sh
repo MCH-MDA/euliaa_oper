@@ -10,7 +10,7 @@ echo
 chmod a+x $path_scripts/*.sh  # make sure all bash scripts are executable
 
 $path_scripts/update_python.sh
-$path_scripts/install_mwr_l12l2.sh
+$path_scripts/install_dl_toolbox.sh
 $path_scripts/install_s3.sh
 $path_scripts/s3_create_buckets.sh eprofile-dl-raw eprofile-dl-l1  # comment this out if buckets alredy exist
 $path_scripts/s3_automount_buckets.sh eprofile-dl-raw eprofile-dl-l1
