@@ -26,5 +26,7 @@ echo "attaching policy $POLICY_FILE"
 s3cmd setpolicy $POLICY_FILE s3://$BUCKET_NAME
 echo "setting retention period to $RETENTION_DAYS days"
 s3cmd expire s3://$BUCKET_NAME --expiry-days $RETENTION_DAYS
-s3cmd getlifecycle s3://$BUCKET_NAME  # printout lifecycle to verify retention setting
+
+echo  # empty line before printing out info on bucket generated
+s3cmd info s3://$BUCKET_NAME  # print out policy and retention settings
 
