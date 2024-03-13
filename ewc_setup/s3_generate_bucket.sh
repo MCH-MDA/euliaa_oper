@@ -19,8 +19,10 @@ then
     exit 1
 fi
 
-# generate bucket and attach policy
+# generate bucket, attach policy and set retention period
+echo "generating s3://$BUCKET_NAME"
 s3cmd mb s3://$BUCKET_NAME
+echo "attaching policy $POLICY_FILE"
 s3cmd setpolicy $POLICY_FILE s3://$BUCKET_NAME
 echo "setting retention period to $RETENTION_DAYS days"
 s3cmd expire s3://$BUCKET_NAME --expiry-days $RETENTION_DAYS
