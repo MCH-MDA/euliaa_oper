@@ -3,7 +3,7 @@
 BUCKET_NAME=$1  # e.g. eprofile-dl-raw
 path_scripts=$(dirname "$0")
 POLICY_FILE="$path_scripts/s3_policy_ukmo.txt"
-RETENTION_DAYS=3  # retention period after which files in bucket are automatically deleted
+RETENTION_DAYS=1  # retention period after which files in bucket are automatically deleted
 
 if [ $# -ne 1 ]
 then
