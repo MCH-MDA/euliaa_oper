@@ -1,13 +1,15 @@
 
 # eprofile_dl_oper
 
-This repository contains scripts to set up the operational data processing of the E-Profile Doppler Wind Lidar (DWL) network. The subdirectories contain the following:
-
 ## Overview
 
-This repository contains shell scripts designed to manage and operate the DWL pre-processor service
+This repository contains scripts to help set up the operational data processing of the E-Profile Doppler Wind Lidar (DWL) network. 
+
+The scripts are designed to setup the DWL pre-processor service on VM on the European Weather Cloud.
 
 ## Repository Structure
+
+The subdirectories contain the following:
 
 - `scripts/`: Contains all the shell scripts used for various operational tasks.
 - `operator_scripts/`: scripts that can be distributed to operators for easening data submission
