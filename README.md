@@ -11,7 +11,7 @@ The scripts are designed to setup the DWL pre-processor service on VM on the Eur
 
 The subdirectories contain the following:
 
-- `scripts/`: Contains all the shell scripts used for various operational tasks.
+- `ewc_setup/`: Contains all the shell scripts used for various operational tasks.
 - `operator_scripts/`: scripts that can be distributed to operators for easening data submission
 
 ## Configuration and documentation
