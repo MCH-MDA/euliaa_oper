@@ -2,7 +2,7 @@
 # Bash script that checks the journalctl logs of the retrieval service and restarts it 
 # in case no logs are founds. 
 # Run with a cronjon with the following:
-# 0,15,30,45 * * * * /usr/bin/bash /home/eric/watch_journal_log.sh >> /home/eric/journal_watchdog.txt
+# 0,15,30,45 * * * * /usr/bin/bash /home/eric/eprofile_dl_oper/ewc_setup/watch_journal_log.sh >> /home/eric/journal_watchdog.txt
 # Define the service to restart (change this to your desired service)
 SERVICE_NAME="retrieval.service"
 
