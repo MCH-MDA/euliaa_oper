@@ -3,6 +3,7 @@
 
 
 PYTHON_VERSION=python3.10
+base_dir="$HOME"
 
 echo 
 echo "Installing $PYTHON_VERSION and updating pip"
@@ -34,5 +35,5 @@ sudo apt install -y python3-pip
 python3 -m pip install --upgrade pip
 
 # Install venv and create virtual environemnt
-sudo apti install $PYTHON_VERSION-venv
-python3 -m venv /home/eric/.env_dl
+sudo apt install $PYTHON_VERSION-venv
+python3 -m venv $base_dir/.env_dl
