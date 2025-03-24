@@ -32,3 +32,7 @@ sudo update-alternatives --set python $full_py_src
 # install and upgrade pip (so that installing from pyproject.toml works in install_mwr_l12l2)
 sudo apt install -y python3-pip
 python3 -m pip install --upgrade pip
+
+# Install venv and create virtual environemnt
+sudo apti install $PYTHON_VERSION-venv
+python3 -m venv /home/eric/.env_dl
