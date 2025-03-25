@@ -16,5 +16,6 @@ act_path=$(pwd)
 cd $base_dir
 git clone $repo_url
 cd $repo_name
-pip3 install .  # don't need a virtual environment here, as this is the only python code running on this VM
+source $base_dir/.env_dl/bin/activate
+pip3 install -e .  # Use virtual environment here and install the package as editable
 cd $act_path

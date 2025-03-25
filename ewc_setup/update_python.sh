@@ -3,6 +3,7 @@
 
 
 PYTHON_VERSION=python3.10
+base_dir="$HOME"
 
 echo 
 echo "Installing $PYTHON_VERSION and updating pip"
@@ -32,3 +33,7 @@ sudo update-alternatives --set python $full_py_src
 # install and upgrade pip (so that installing from pyproject.toml works in install_mwr_l12l2)
 sudo apt install -y python3-pip
 python3 -m pip install --upgrade pip
+
+# Install venv and create virtual environemnt
+sudo apt install $PYTHON_VERSION-venv
+python3 -m venv $base_dir/.env_dl
