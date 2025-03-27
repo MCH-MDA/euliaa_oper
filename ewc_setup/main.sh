@@ -13,9 +13,11 @@ chmod a+x $path_scripts/*.sh  # make sure all bash scripts are executable
 $path_scripts/get_config.sh || exit $?
 
 $path_scripts/update_python.sh
-$path_scripts/install_dl_toolbox.sh
 $path_scripts/install_s3.sh
-# $path_scripts/s3_create_buckets.sh eprofile-dl-raw eprofile-dl-l1  # comment this out if buckets alredy exist
-$path_scripts/s3_automount_buckets.sh eprofile-dl-raw eprofile-dl-l1
-$path_scripts/import_eprofile_config.sh
-$path_scripts/write_cron.sh
+# $path_scripts/s3_create_buckets.sh eprofile-dl-raw eprofile-dl-l1  # comment this out if buckets alredy exist. Also, creating buckets in morpheus is preferrable (buckets created in command line don't show up in morpheus)
+$path_scripts/s3_automount_buckets.sh euliaa-test # mount buckets
+$path_scripts/install_euliaa_proc.sh # download and install processing scripts
+
+# OLD - E-PROFILE
+# $path_scripts/import_eprofile_config.sh
+# $path_scripts/write_cron.sh

@@ -10,13 +10,7 @@ echo "Installing $PYTHON_VERSION and updating pip"
 echo "========================================"
 echo
 
-# the following does not work on EWC and is not needed for python3.8
-# # add deadsnakes as some python versions are not automatically available via apt 
-# sudo add-apt-repository ppa:deadsnakes/ppa
-# sudo apt update
-
 sudo apt install -y $PYTHON_VERSION
-
 
 # set new python as default for...
 full_py_src=$(which $PYTHON_VERSION)
@@ -30,10 +24,16 @@ sudo update-alternatives --install /usr/bin/python python $full_py_src 1
 sudo update-alternatives --set python $full_py_src
 
 
-# install and upgrade pip (so that installing from pyproject.toml works in install_mwr_l12l2)
+# install and upgrade pip (so that installing from pyproject.toml works)
 sudo apt install -y python3-pip
 python3 -m pip install --upgrade pip
 
-# Install venv and create virtual environemnt
-# sudo apt install $PYTHON_VERSION-venv
-# python3 -m venv $base_dir/.env_dl
+# Install venv 
+sudo apt install $PYTHON_VERSION-venv
+python3 -m venv $base_dir/.env_euliaa # SET YOUR ENVIRONMENT NAME HERE
+
+# Install poetry and required dependencies
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+source ~/.bashrc
+pipx install poetry
