@@ -35,5 +35,5 @@ sudo apt install -y python3-pip
 python3 -m pip install --upgrade pip
 
 # Install venv and create virtual environemnt
-sudo apt install $PYTHON_VERSION-venv
-python3 -m venv $base_dir/.env_dl
+# sudo apt install $PYTHON_VERSION-venv
+# python3 -m venv $base_dir/.env_dl
