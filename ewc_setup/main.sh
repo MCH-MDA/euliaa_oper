@@ -1,3 +1,5 @@
+#!/bin/bash -i
+
 # This is the main script orchestrating the whole set up of a new VM from scratch
 
 path_scripts=$(dirname "$0")

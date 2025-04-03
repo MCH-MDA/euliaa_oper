@@ -1,5 +1,3 @@
-exec bash
-
 repo_name=euliaa_postproc
 repo_url=https://github.com/MCH-MDA/euliaa_postproc.git
 base_dir="$HOME"  
@@ -14,6 +12,7 @@ cd $base_dir
 git clone $repo_url
 cd $repo_name
 
+source ~/.bashrc
 pipx install poetry
 source $base_dir/.env_euliaa/bin/activate
 poetry install # Install dependencies in pyproject.toml in the env_euliaa environment
