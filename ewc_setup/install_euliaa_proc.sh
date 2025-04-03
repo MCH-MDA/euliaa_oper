@@ -1,3 +1,5 @@
+#!/bin/bash -i
+
 repo_name=euliaa_postproc
 repo_url=https://github.com/MCH-MDA/euliaa_postproc.git
 base_dir="$HOME"  
