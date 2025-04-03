@@ -32,3 +32,8 @@ echo "=============================="
 echo
 source ~/.bashrc  # needed for proper poetry installation
 $path_scripts/install_euliaa_proc.sh # download and install processing scripts
+
+echo
+echo
+echo "DONE SETTING UP VM!"
+echo "=============================="
