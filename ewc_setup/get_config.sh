@@ -9,7 +9,7 @@ file_conf=$path_scripts/$FILENAME_CONF
 if [ ! -f "$file_conf" ]; then
     echo "configuration file $file_conf does not exist! To make the package run do the following:"
     echo "    1. copy ewc_example.conf to ewc.conf"
-    echo "    2. fill in your secrets (from M:\pay-proj\pay\E-PROFILE\EProfileLogins.kdbx)"
+    echo "    2. fill in your secret and access keys"
     echo "    3. re-run your script"
     exit 2
 fi

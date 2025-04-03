@@ -29,11 +29,14 @@ sudo apt install -y python3-pip
 python3 -m pip install --upgrade pip
 
 # Install venv 
+echo
+echo "Installing $PYTHON_VERSION-venv and creating environment .env_euliaa"
+echo "========================================"
+echo
 sudo apt install $PYTHON_VERSION-venv
 python3 -m venv $base_dir/.env_euliaa # SET YOUR ENVIRONMENT NAME HERE
 
 # Install poetry and required dependencies
 python3 -m pip install --user pipx
 python3 -m pipx ensurepath
-source ~/.bashrc
-pipx install poetry
+# source ~/.bashrc
