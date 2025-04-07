@@ -25,7 +25,7 @@ echo "=============================="
 echo
 $path_scripts/install_s3.sh
 # $path_scripts/s3_create_buckets.sh eprofile-dl-raw eprofile-dl-l1  # comment this out if buckets alredy exist. Also, creating buckets in morpheus is preferrable (buckets created in command line don't show up in morpheus)
-$path_scripts/s3_automount_buckets.sh euliaa-test # mount buckets
+$path_scripts/s3_automount_buckets.sh s3euliaa # mount buckets
 
 echo "DOWNLOAD AND INSTALL EULIAA PROC SCRIPTS"
 echo "=============================="
