@@ -41,7 +41,7 @@ cat >/$HOME/.aws/config <<EOT
 endpoint_url = $S3_HOST_BASE
 EOT
 
-cat >/$HOME/.aws/config <<EOT
+cat >/$HOME/.aws/credentials <<EOT
 [default]
 aws_access_key_id = $S3_ACCESS_KEY
 aws_secret_access_key = $S3_SECRET_KEY
