@@ -1,6 +1,0 @@
-host_base = https://object-store.os-api.cci1.ecmwf.int
-host_bucket = 
-access_key = #PUT YOUR ACCESS KEY HERE
-secret_key = #PUT YOUR SECRET KEY HERE
-use_https = True
-check_ssl_certificate = False
