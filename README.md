@@ -27,7 +27,7 @@ In your virtual machine
 This mostly takes care of installing packages for data transfer to S3 bucket
 - clone this repository
 - `cd euliaa_oper/operator_setup`
-- `cp ewc_example.conf ewc.conf`
+- `cp ewc_s3bucket_example.conf ewc_s3bucket.conf`
 - Then, edit ewc.conf and add the access and secret keys for S3 bucket configuration. You can also change where the buckets are mounted (`S3_MOUNTPOINT`), currently `/data/`.
 - Make the bash scripts executable: `chmod +x *.sh`
 - Run `./install_s3.sh` : this installs and configures the S3 buckets. At the end, you will be requested to validate the configuration (by hitting Enter or typing 'y').
